@@ -1,0 +1,22 @@
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+.head__logo {
+    margin: 45px 0 0 60px;
+    max-width: 142px;
+}
+
+.head__line {
+    margin-top: 41px;
+    border: 1px solid #545454;
+}
+
+@media screen and (max-width: 610px) {
+
+    .head__logo {
+        width: 104px;
+    }
+}

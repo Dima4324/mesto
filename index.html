@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Место</title>
+    <link rel="stylesheet" href="/blocks/style.css">
+    <link rel="stylesheet" href="blocks/head.css">
+    <link rel="stylesheet" href="blocks/user.css">
+    <link rel="stylesheet" href="blocks/cards.css">
+    <link rel="stylesheet" href="blocks/popup.css">
+    <link rel="stylesheet" href="blocks/footer.css">
+</head>
+
+<body>
+    <header class="head">
+        <img class="head__logo" src="imgs/logo.svg" alt="место">
+        <span class="head__line"></span>
+    </header>
+    <main>
+        <section>
+            <div class="user">
+                <div class="user__info">
+                        <img src="/imgs/Avatar.svg" alt="фотография профиля" class="user__photo">
+                    <div class="user__text">
+                        <div class="user__btn-name">
+                            <h1 class="user__name">Жак-Ив Кусто</h1>
+                            <button type="submit" class="user__edit"></button>
+                        </div>
+                        <p class="user__description">Исследователь океана</p>
+                    </div>
+                </div>
+                <button type="submit" class="user__add"></button>
+            </div>
+        </section>
+        <section>
+            <div class="cards">
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-3.svg" alt="Карачаевск" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Карачаевск</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-1.svg" alt="Гора Эльбрус" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Гора Эльбрус</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-2.svg" alt="Домбай" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Домбай</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-1.svg" alt="Гора Эльбрус" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Гора Эльбрус</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-2.svg" alt="Домбай" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Домбай</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <img src="/imgs/Mask Group-3.svg" alt="Карачаево-Черкесия" class="cards__photo">
+                    <div class="cards__info">
+                        <h2 class="cards__name">Карачаево-Черкесия</h2>
+                        <button type="submit" class="cards__like"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popup close">
+            <div class="popup__container">
+                <h3 class="popup__text">Редактировать профиль</h3>
+                <form action="" class="popup__form">
+                    <input class="popup__input" type="text" placeholder="Название">
+                    <input class="popup__input" type="text" placeholder="Описание">
+                    <button type="submit" class="popup__btn">Сохранить</button>
+                </form>
+                <button type="submit" class="popup__img"></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">© 2020 Mesto Russia</div>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
