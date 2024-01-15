@@ -1,0 +1,16 @@
+.copyright {
+    color: #545454;
+    font-size: 18px;
+    margin: 66px 0 60px 0;
+}
+
+@media screen and (max-width: 910px) {
+
+    .copyright {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 66px;
+        margin-bottom: 60px;
+
+    }
+}
