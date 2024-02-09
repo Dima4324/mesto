@@ -47,6 +47,7 @@ const popupAvatar = new PopupWithForm({
                 btn.textContent = 'Сохранить'
                 popupAvatar.close()
             })
+            .catch(error => console.log(error))
     }
 })
 
@@ -67,7 +68,7 @@ const popupEdit = new PopupWithForm({
         btn.classList.add('popup__btn-inactive');
         btn.textContent = 'Редактируем данные...'
         api.editProfile(userData)
-            .then(res => {
+            .then(() => {
                 userInfo.setUserInfo(userData)
             })
             .finally(() => {
@@ -76,6 +77,7 @@ const popupEdit = new PopupWithForm({
                 btn.textContent = 'Сохранить'
                 popupEdit.close()
             })
+            .catch(error => console.log(error))
     }
 })
 
@@ -132,6 +134,7 @@ Promise.all([api.getUserInfo(), api.getInitialCards()])
         userId = user._id
         cardsList.renderItems(card.reverse())
     })
+    .catch(error => console.log(error))
 
 const popupPlaceForm = new PopupWithForm({
     selector: addPlaceSelector,
@@ -154,6 +157,7 @@ const popupPlaceForm = new PopupWithForm({
                 btn.textContent = 'Создать'
                 popupPlaceForm.close()
             })
+            .catch(error => console.log(error))
     }
 })
 
