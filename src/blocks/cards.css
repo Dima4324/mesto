@@ -8,15 +8,18 @@
 }
 
 .cards__card {
-    width: 282px;
+    width: 280px;
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .cards__photo {
-    width: 282px;
+    width: 280px;
     height: 282px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -77,12 +80,13 @@
     cursor: pointer;
 }
 
-.cards__like:active {
+.cards__like-active {
     background-image: url(../imgs/like_active.svg)
 }
 
-.cards__like-active {
-    background-image: url(../imgs/like_active.svg)
+.count-likes {
+    font-size: 15px;
+    margin-top: 4px;
 }
 
 .cards__img-popup {

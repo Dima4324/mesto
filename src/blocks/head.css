@@ -1,4 +1,3 @@
-
 .head {
     display: flex;
     flex-direction: column;
@@ -14,9 +13,13 @@
     border: 1px solid #545454;
 }
 
-@media screen and (max-width: 610px) {
-
+@media screen and (max-width: 801px) {
     .head__logo {
-        width: 104px;
+        width: 105px;
+        margin: 31px 0 0 45px;
+    }
+
+    .head__line {
+        margin-top: 31px;
     }
 }

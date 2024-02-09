@@ -15,6 +15,10 @@
     transition: visibility .5s, opacity .5s linear;
 }
 
+.full-photo {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
 .popup__open {
     opacity: 1;
     visibility: visible;
@@ -29,6 +33,14 @@
     width: 430px;
     position: relative;
     border-radius: 10px;
+}
+
+.popup_delete {
+    display: block;
+}
+
+.popup_delete-btn {
+    width: 100%;
 }
 
 
@@ -112,7 +124,7 @@
     top: -40px;
     right: -40px;
     background: transparent;
-    background-image: url(../imgs/Close\ Icon.svg);
+    background-image: url(../imgs/Close-Icon.svg);
     border: 1px solid #fff;
     outline: none;
     background-position: 50%;

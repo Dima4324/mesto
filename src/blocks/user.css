@@ -10,8 +10,35 @@
     align-items: center;
 }
 
+.user__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+}
+
 .user__photo {
-    border-radius: 50%
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.user__edit-container {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: background-color linear .3s;
+    top: 0;
+}
+
+.user__edit-container:hover {
+    background-image: url(../imgs/edit-avatar.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
 }
 
 .user__text {
